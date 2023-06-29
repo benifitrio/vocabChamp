@@ -1,0 +1,53 @@
+{
+    "questions": [{
+            "question": "What is the meaning of 'abundant'?",
+            "options": ["A. Jarang", "B. Melimpah", "C. Terbatas", "D. Langka"],
+            "correctIndex": 1
+        },
+        {
+            "question": "What is the meaning of 'prevent'?",
+            "options": ["A. Mengizinkan", "B. Mendorong", "C. Menghentikan", "D. Memulai"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'diligent'?",
+            "options": ["A. Malas", "B. Ceroboh", "C. Tekun", "D. Santai"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'significant'?",
+            "options": ["A. Kecil", "B. Tidak penting", "C. Penting", "D. Acak"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'contribute'?",
+            "options": ["A. Menghindari", "B. Menyembunyikan", "C. Berkontribusi", "D. Menipu"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'devastate'?",
+            "options": ["A. Memperbaiki", "B. Mengabaikan", "C. Merusak", "D. Menenangkan"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'reluctant'?",
+            "options": ["A. Antusias", "B. Percaya", "C. Terbuka", "D. Enggan"],
+            "correctIndex": 3
+        },
+        {
+            "question": "What is the meaning of 'confident'?",
+            "options": ["A. Cemas", "B. Takut", "C. Percaya diri", "D. Ragu-ragu"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'expand'?",
+            "options": ["A. Mengecil", "B. Berkurang", "C. Memperluas", "D. Menyusut"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'appreciate'?",
+            "options": ["A. Meremehkan", "B. Menjauhi", "C. Menghargai", "D. Menyalahkan"],
+            "correctIndex": 2
+        }
+    ]
+}
