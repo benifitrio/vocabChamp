@@ -1,52 +1,52 @@
 {
     "questions": [{
             "question": "What is the meaning of 'abundant'?",
-            "options": ["A. Jarang", "B. Melimpah", "C. Terbatas", "D. Langka"],
+            "options": ["Jarang", "Melimpah", "Terbatas", "Langka"],
             "correctIndex": 1
         },
         {
             "question": "What is the meaning of 'prevent'?",
-            "options": ["A. Mengizinkan", "B. Mendorong", "C. Menghentikan", "D. Memulai"],
+            "options": ["Mengizinkan", "Mendorong", "Menghentikan", "Memulai"],
             "correctIndex": 2
         },
         {
             "question": "What is the meaning of 'diligent'?",
-            "options": ["A. Tekun", "B. Ceroboh", "C. Malas", "D. Santai"],
+            "options": ["Tekun", "Ceroboh", "Malas", "Santai"],
             "correctIndex": 0
         },
         {
             "question": "What is the meaning of 'significant'?",
-            "options": ["A. Kecil", "B. Tidak penting", "C. Penting", "D. Acak"],
+            "options": ["Kecil", "Tidak penting", "Penting", "Acak"],
             "correctIndex": 2
         },
         {
             "question": "What is the meaning of 'contribute'?",
-            "options": ["A. Menghindari", "B. Berkontribusi", "C. Menyembunyikan", "D. Menipu"],
+            "options": ["Menghindari", "Berkontribusi", "Menyembunyikan", "Menipu"],
             "correctIndex": 1
         },
         {
             "question": "What is the meaning of 'devastate'?",
-            "options": ["A. Memperbaiki", "B. Mengabaikan", "C. Merusak", "D. Menenangkan"],
+            "options": ["Memperbaiki", "Mengabaikan", "Merusak", "Menenangkan"],
             "correctIndex": 2
         },
         {
             "question": "What is the meaning of 'reluctant'?",
-            "options": ["A. Antusias", "B. Percaya", "C. Terbuka", "D. Enggan"],
+            "options": ["Antusias", "Percaya", "Terbuka", "Enggan"],
             "correctIndex": 3
         },
         {
             "question": "What is the meaning of 'confident'?",
-            "options": ["A. Cemas", "B. Takut", "C. Ragu-ragu", "D. Percaya diri"],
+            "options": ["Cemas", "Takut", "Ragu-ragu", "Percaya diri"],
             "correctIndex": 3
         },
         {
             "question": "What is the meaning of 'expand'?",
-            "options": ["A. Memperluas", "B. Berkurang", "C. Mengecil", "D. Menyusut"],
+            "options": ["Memperluas", "Berkurang", "Mengecil", "Menyusut"],
             "correctIndex": 0
         },
         {
             "question": "What is the meaning of 'appreciate'?",
-            "options": ["A. Meremehkan", "B. Menjauhi", "C. Menghargai", "D. Menyalahkan"],
+            "options": ["Meremehkan", "Menjauhi", "Menghargai", "Menyalahkan"],
             "correctIndex": 2
         }
     ]

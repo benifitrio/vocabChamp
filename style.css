@@ -24,6 +24,38 @@ body {
     color: #f5f5f5;
 }
 
+.option {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.option label {
+    display: block;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f2f2f2;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option label:hover {
+    background-color: #e0e0e0;
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+.option input[type="radio"]:checked+label {
+    background-color: #4caf50;
+    color: #fff;
+}
+
 .question-container {
     background-color: #f5f5f5;
     padding: 20px;
