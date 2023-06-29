@@ -33,6 +33,8 @@ restartBtn.addEventListener('click', () => {
     shuffleQuestions(questions);
     showQuestion(currentQuestionIndex);
     scoreContainer.style.display = 'none';
+    restartBtn.style.display = 'none';
+    nextBtn.style.display = 'block';
 });
 
 function showQuestion(index) {
@@ -63,15 +65,13 @@ function showResults() {
     // Calculate score percentage
     const maxScore = questions.length;
     const percentage = (score / maxScore) * 100;
-    console.log(percentage)
-        // Display the score
+
+    // Display the score
     const scoreElement = document.createElement('p');
     scoreElement.innerHTML = `Your score: ${score} / ${maxScore} (${percentage.toFixed(2)}%)`;
     scoreContainer.innerHTML = '';
     scoreContainer.appendChild(scoreElement);
     scoreContainer.style.display = 'block';
-
-    restartBtn.style.display = 'block';
 
     // Show appropriate message and emoticon based on the score
     const messageElement = document.createElement('p');
@@ -81,6 +81,9 @@ function showResults() {
         messageElement.innerHTML = 'You did not pass the quiz. Please try again. 😞';
     }
     scoreContainer.appendChild(messageElement);
+
+    nextBtn.style.display = 'none';
+    restartBtn.style.display = 'block';
 }
 
 function shuffleQuestions(array) {
