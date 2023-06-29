@@ -70,7 +70,7 @@ function showResults() {
     scoreContainer.innerHTML = '';
     scoreContainer.appendChild(scoreElement);
     scoreContainer.style.display = 'block';
-    nextBtn.style.display = 'none';
+
     restartBtn.style.display = 'block';
 
     // Show appropriate message and emoticon based on the score
