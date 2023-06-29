@@ -11,8 +11,8 @@
         },
         {
             "question": "What is the meaning of 'diligent'?",
-            "options": ["A. Malas", "B. Ceroboh", "C. Tekun", "D. Santai"],
-            "correctIndex": 2
+            "options": ["A. Tekun", "B. Ceroboh", "C. Malas", "D. Santai"],
+            "correctIndex": 0
         },
         {
             "question": "What is the meaning of 'significant'?",
@@ -21,8 +21,8 @@
         },
         {
             "question": "What is the meaning of 'contribute'?",
-            "options": ["A. Menghindari", "B. Menyembunyikan", "C. Berkontribusi", "D. Menipu"],
-            "correctIndex": 2
+            "options": ["A. Menghindari", "B. Berkontribusi", "C. Menyembunyikan", "D. Menipu"],
+            "correctIndex": 1
         },
         {
             "question": "What is the meaning of 'devastate'?",
@@ -36,13 +36,13 @@
         },
         {
             "question": "What is the meaning of 'confident'?",
-            "options": ["A. Cemas", "B. Takut", "C. Percaya diri", "D. Ragu-ragu"],
-            "correctIndex": 2
+            "options": ["A. Cemas", "B. Takut", "C. Ragu-ragu", "D. Percaya diri"],
+            "correctIndex": 3
         },
         {
             "question": "What is the meaning of 'expand'?",
-            "options": ["A. Mengecil", "B. Berkurang", "C. Memperluas", "D. Menyusut"],
-            "correctIndex": 2
+            "options": ["A. Memperluas", "B. Berkurang", "C. Mengecil", "D. Menyusut"],
+            "correctIndex": 0
         },
         {
             "question": "What is the meaning of 'appreciate'?",

@@ -1,3 +1,4 @@
+const quizContainer = document.getElementById('quiz-container');
 const questionContainer = document.getElementById('question-container');
 const nextBtn = document.getElementById('next-btn');
 const restartBtn = document.getElementById('restart-btn');
@@ -45,45 +46,47 @@ function showQuestion(index) {
     questionElement.classList.add('question');
     questionElement.innerHTML = `<h2>${question.question}</h2>`;
 
+    const optionsContainer = document.createElement('div');
+    optionsContainer.classList.add('options-container');
+
     question.options.forEach((option, optionIndex) => {
         const optionElement = document.createElement('div');
         optionElement.classList.add('option');
         optionElement.innerHTML = `
-      <input type="radio" id="option${optionIndex}" name="option" value="${optionIndex}">
-      <label for="option${optionIndex}">${option}</label>
-    `;
-        questionElement.appendChild(optionElement);
+            <input type="radio" id="option${optionIndex}" name="option" value="${optionIndex}">
+            <label for="option${optionIndex}">${option}</label>
+        `;
+        optionsContainer.appendChild(optionElement);
     });
 
+    questionElement.appendChild(optionsContainer);
     questionContainer.appendChild(questionElement);
     scoreContainer.style.display = 'none';
 }
 
 function showResults() {
-    questionContainer.innerHTML = '<h2>Quiz Completed!</h2>';
+    questionContainer.innerHTML = '';
 
-    // Calculate score percentage
-    const maxScore = questions.length;
-    const percentage = (score / maxScore) * 100;
+    const resultElement = document.createElement('div');
+    resultElement.classList.add('result');
+    resultElement.innerHTML = `
+        <h2>Quiz Completed!</h2>
+        <p>Your score: ${score} / ${questions.length}</p>
+    `;
 
-    // Display the score
-    const scoreElement = document.createElement('p');
-    scoreElement.innerHTML = `Your score: ${score} / ${maxScore} (${percentage.toFixed(2)}%)`;
-    scoreContainer.innerHTML = '';
-    scoreContainer.appendChild(scoreElement);
-    scoreContainer.style.display = 'block';
-
-    // Show appropriate message and emoticon based on the score
     const messageElement = document.createElement('p');
-    if (percentage >= 60) {
+    if (score >= Math.ceil(questions.length / 2)) {
         messageElement.innerHTML = 'Congratulations! You passed the quiz. 😃';
     } else {
         messageElement.innerHTML = 'You did not pass the quiz. Please try again. 😞';
     }
-    scoreContainer.appendChild(messageElement);
 
-    nextBtn.style.display = 'none';
+    resultElement.appendChild(messageElement);
+    questionContainer.appendChild(resultElement);
+
+    scoreContainer.style.display = 'block';
     restartBtn.style.display = 'block';
+    nextBtn.style.display = 'none';
 }
 
 function shuffleQuestions(array) {

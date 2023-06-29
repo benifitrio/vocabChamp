@@ -11,16 +11,27 @@
 
 <body>
 
-    <div id="question-container">
-        <!-- Pertanyaan akan ditampilkan di sini -->
-    </div>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 class="quiz-title">Quiz Vocabulary Bahasa Inggris</h1>
+        </div>
 
-    <div id="score-container" style="display: none;">
-        <!-- Skor akan ditampilkan di sini -->
-    </div>
+        <div class="question-container" id="question-container">
+            <div id="question-text" class="question-text"></div>
+            <div id="options-container" class="options-container">
+                <!-- Pilihan jawaban akan ditampilkan di sini -->
+            </div>
+        </div>
 
-    <button id="next-btn">Next</button>
-    <button id="restart-btn" style="display: none;">Restart</button>
+        <div id="score-container" class="score-container" style="display: none;">
+            <!-- Skor akan ditampilkan di sini -->
+        </div>
+
+        <div class="button-container">
+            <button id="next-btn" class="next-btn">Next</button>
+            <button id="restart-btn" class="restart-btn" style="display: none;">Restart</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
