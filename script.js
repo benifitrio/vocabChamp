@@ -3,10 +3,14 @@ const questionContainer = document.getElementById('question-container');
 const nextBtn = document.getElementById('next-btn');
 const restartBtn = document.getElementById('restart-btn');
 const scoreContainer = document.getElementById('score-container');
+const timerContainer = document.getElementById('timer-container');
+const questionNumberContainer = document.getElementById('question-number');
 
 let currentQuestionIndex = 0;
 let questions = [];
 let score = 0;
+let timeLeft = 20;
+let timerInterval;
 
 nextBtn.addEventListener('click', () => {
     const selectedOption = document.querySelector('input[name="option"]:checked');
@@ -23,19 +27,23 @@ nextBtn.addEventListener('click', () => {
         if (currentQuestionIndex < questions.length) {
             showQuestion(currentQuestionIndex);
         } else {
+            clearInterval(timerInterval);
             showResults();
         }
     }
 });
 
 restartBtn.addEventListener('click', () => {
+    clearInterval(timerInterval);
     currentQuestionIndex = 0;
     score = 0;
+    timeLeft = 20;
     shuffleQuestions(questions);
     showQuestion(currentQuestionIndex);
     scoreContainer.style.display = 'none';
     restartBtn.style.display = 'none';
     nextBtn.style.display = 'block';
+    startTimer();
 });
 
 function showQuestion(index) {
@@ -62,6 +70,11 @@ function showQuestion(index) {
     questionElement.appendChild(optionsContainer);
     questionContainer.appendChild(questionElement);
     scoreContainer.style.display = 'none';
+
+    // Update question number
+    questionNumberContainer.textContent = `Question ${index + 1} of ${questions.length}`;
+
+
 }
 
 function showResults() {
@@ -96,6 +109,18 @@ function shuffleQuestions(array) {
     }
 }
 
+function startTimer() {
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        timerContainer.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            showResults();
+        }
+    }, 1000);
+}
+
 // Load questions from JSON file
 fetch('quiz.json')
     .then(response => response.json())
@@ -103,4 +128,5 @@ fetch('quiz.json')
         questions = data.questions;
         shuffleQuestions(questions);
         showQuestion(currentQuestionIndex);
+        startTimer();
     });
