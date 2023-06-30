@@ -52,7 +52,7 @@ function showQuestion(index) {
 
     const questionElement = document.createElement('div');
     questionElement.classList.add('question');
-    questionElement.innerHTML = `<h4>${question.question}</h4>`;
+    questionElement.innerHTML = `<h2>${question.question}</h2>`;
 
     const optionsContainer = document.createElement('div');
     optionsContainer.classList.add('options-container');
@@ -84,7 +84,7 @@ function showResults() {
     resultElement.classList.add('result');
     resultElement.innerHTML = `
         <h2>Quiz Completed!</h2>
-        <p>Your score: ${score} / ${questions.length}</p>
+        <p>Your score: ${score*5} / ${questions.length*5}</p>
     `;
 
     const messageElement = document.createElement('p');
@@ -112,11 +112,11 @@ function shuffleQuestions(array) {
 function startTimer() {
     timerInterval = setInterval(() => {
         timeLeft--;
-        timerContainer.textContent = timeLeft;
+        timerContainer.textContent = `Times: ${timeLeft} Secs`;
 
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
-            document.querySelector('#time-up').textContent = "Time's up!";
+            timerContainer.textContent = "Time's up!";
             showResults();
         }
     }, 1000);
