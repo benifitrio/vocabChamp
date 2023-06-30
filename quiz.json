@@ -48,6 +48,56 @@
             "question": "What is the meaning of 'appreciate'?",
             "options": ["Meremehkan", "Menjauhi", "Menghargai", "Menyalahkan"],
             "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'acquire'?",
+            "options": ["Kehilangan", "Mendapatkan", "Melepaskan", "Menyerah"],
+            "correctIndex": 1
+        },
+        {
+            "question": "What is the meaning of 'comprehend'?",
+            "options": ["Mengingat", "Memahami", "Mengevaluasi", "Mengabaikan"],
+            "correctIndex": 1
+        },
+        {
+            "question": "What is the meaning of 'cooperate'?",
+            "options": ["Bersaing", "Berselisih", "Berpisah", "Bekerjasama"],
+            "correctIndex": 3
+        },
+        {
+            "question": "What is the meaning of 'grateful'?",
+            "options": ["Kecewa", "Marah", "Terkesan", "Bersyukur"],
+            "correctIndex": 3
+        },
+        {
+            "question": "What is the meaning of 'persuade'?",
+            "options": ["Merayu", "Menghukum", "Menghina", "Menyusahkan"],
+            "correctIndex": 0
+        },
+        {
+            "question": "What is the meaning of 'negotiate'?",
+            "options": ["Berpisah", "Berdebat", "Bernegosiasi", "Bermusuhan"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'recruit'?",
+            "options": ["Membatalkan", "Memecat", "Mengundurkan diri", "Merekrut"],
+            "correctIndex": 3
+        },
+        {
+            "question": "What is the meaning of 'evaluate'?",
+            "options": ["Menghancurkan", "Menyesatkan", "Menilai", "Membela"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'integrate'?",
+            "options": ["Membagi", "Mengisolasi", "Menggabungkan", "Menyembunyikan"],
+            "correctIndex": 2
+        },
+        {
+            "question": "What is the meaning of 'convey'?",
+            "options": ["Menyembunyikan", "Mengungkapkan", "Mencela", "Merusak"],
+            "correctIndex": 1
         }
     ]
 }

@@ -9,7 +9,7 @@ const questionNumberContainer = document.getElementById('question-number');
 let currentQuestionIndex = 0;
 let questions = [];
 let score = 0;
-let timeLeft = 20;
+let timeLeft = 30;
 let timerInterval;
 
 nextBtn.addEventListener('click', () => {
@@ -37,7 +37,7 @@ restartBtn.addEventListener('click', () => {
     clearInterval(timerInterval);
     currentQuestionIndex = 0;
     score = 0;
-    timeLeft = 20;
+    timeLeft = 30;
     shuffleQuestions(questions);
     showQuestion(currentQuestionIndex);
     scoreContainer.style.display = 'none';
