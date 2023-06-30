@@ -116,6 +116,7 @@ function startTimer() {
 
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
+            document.querySelector('#time-up').textContent = "Time's up!";
             showResults();
         }
     }, 1000);
