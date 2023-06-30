@@ -2,10 +2,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: url(./bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-color: #461a42;
 }
 
 .quiz-container {
