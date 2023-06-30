@@ -52,7 +52,7 @@ function showQuestion(index) {
 
     const questionElement = document.createElement('div');
     questionElement.classList.add('question');
-    questionElement.innerHTML = `<h2>${question.question}</h2>`;
+    questionElement.innerHTML = `<h4>${question.question}</h4>`;
 
     const optionsContainer = document.createElement('div');
     optionsContainer.classList.add('options-container');
